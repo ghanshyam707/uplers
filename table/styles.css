@@ -1,0 +1,38 @@
+
+body {
+  margin: 0;
+  overflow: hidden;
+  background-color: purple;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 10px;
+  gap: 50px;
+  padding: 50px;
+  overflow: hidden;
+}
+.grid-item {
+  border: 1px solid white;
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+  color: white;
+  overflow: hidden;
+  position: relative;
+
+}
+.tooltip {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #333;
+  color: #fff;
+  padding: 5px;
+  display: none;
+}
+
+.grid-item:hover .tooltip {
+  display: block;
+}
